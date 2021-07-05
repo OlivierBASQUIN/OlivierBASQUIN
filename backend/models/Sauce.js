@@ -1,6 +1,10 @@
 // Importation de mongoose
 const mongoose = require('mongoose');
 
+// Package qui purifie les champs du model avant de les enregistrer dans la base MongoDB (cela évite une injection de code malveillant)
+const sanitizerPlugin = require('mongoose-sanitizer-plugin');
+
+
 //création du schéma de données Sauce
 const sauceSchema = mongoose.Schema({
     userId: {type: String, required: true},
@@ -15,5 +19,8 @@ const sauceSchema = mongoose.Schema({
     usersLiked: [String],
     usersDisliked: [String],
 });
+
+sauceSchema.plugin(sanitizerPlugin);
+
 
 module.exports = mongoose.model('Sauce', sauceSchema);
