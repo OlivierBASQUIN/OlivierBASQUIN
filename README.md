@@ -2,6 +2,7 @@ Pour pouvoir utiliser correctement l’API, veuillez suivre ces instructions :
 
 Clonez ce repository.
 
+
 Piquante - Backend :
 
 Depuis le dossier backend, télécharger et installer Node.js
@@ -13,6 +14,7 @@ Lancer le serveur avec nodemon server
 Le serveur sera accessible sur http://localhost:3000/
 
 
+
 Piquante - Frontend :
 
 Depuis le dossier frontend,
@@ -20,6 +22,7 @@ Depuis le dossier frontend,
 Installer @Angular/CLI avec npm install -g @angular/cli
 
 Installer node-sass avec npm install node-sass
+
 
 
 Serveur de développement :
